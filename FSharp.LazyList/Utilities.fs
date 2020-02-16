@@ -1,3 +1,4 @@
+[<AutoOpen>]
 module Utilities
 
 let flip f y x = f x y

@@ -4,7 +4,10 @@ module LazyList
 open Lazy
 open Utilities
 
-type LazyList<'a> = Empty | LazyList of head: Lazy<'a> * tail: LazyList<'a>
+[<StructuredFormatDisplay("{AsString}")>]
+type LazyList<'a> =
+    | Empty
+    | LazyList of head: Lazy<'a> * tail: LazyList<'a>
 
 let empty = Empty
 
@@ -47,3 +50,5 @@ let rec foldl f acc = function
 let rec bind f = function
     | Empty -> Empty
     | LazyList (Lazy x, xs) -> f x ++ bind f xs
+
+let toList xs = foldl (fun acc x -> x :: acc) [] xs
