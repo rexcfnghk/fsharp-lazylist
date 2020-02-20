@@ -10,7 +10,7 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSharp.LazyList\FSharp.LazyList.fsproj" />
+    <ProjectReference Include="..\..\app\FSharp.LazyList\FSharp.LazyList.fsproj" />
   </ItemGroup>
-  <Import Project="..\.paket\Paket.Restore.targets" />
+  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
 </Project>
