@@ -1,8 +1,5 @@
 FsUnit.xUnit
 Hedgehog
-Microsoft.NET.Test.Sdk
 Unquote
-xunit
 xunit.runner.visualstudio
 coverlet.collector
-FSharp.Core
