@@ -1,5 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{3467B37E-1697-4FE7-82E0-CF3EC23F3284}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.LazyList", "FSharp.LazyList\FSharp.LazyList.fsproj", "{C1E879ED-2C3D-40AA-8814-6EDD74F3FBAA}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.LazyList.Tests", "FSharp.LazyList.Tests\FSharp.LazyList.Tests.fsproj", "{29DE2B20-4584-427F-B61A-9F8DBC8B66DD}"

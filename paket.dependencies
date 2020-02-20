@@ -1,0 +1,10 @@
+source https://www.nuget.org/api/v2
+
+nuget FSharp.Core
+nuget coverlet.collector 1.2.0
+nuget FsUnit.xUnit 3.8.0
+nuget Hedgehog 0.8.3
+nuget Microsoft.NET.Test.Sdk 16.5.0
+nuget Unquote 5.0.0
+nuget xunit 2.4.1
+nuget xunit.runner.visualstudio 2.4.1
