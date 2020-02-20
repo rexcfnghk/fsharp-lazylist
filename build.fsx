@@ -11,11 +11,9 @@ open Fake.DotNet
 open Fake.Core
 
 let buildDir = "./build/"
-let testDir = "./test/"
 
-// Default
 Target.create "Clean" (fun _ ->
-    Shell.cleanDirs [buildDir; testDir]
+    Shell.cleanDir buildDir
 )
 
 Target.create "BuildApp" (fun _ ->
