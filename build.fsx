@@ -1,12 +1,10 @@
 #r "paket:
 nuget Fake.IO.FileSystem
 nuget Fake.DotNet.Cli
-nuget Fake.DotNet.MSBuild
 nuget Fake.Core.Target //"
 #load "./.fake/build.fsx/intellisense.fsx"
 
 open Fake.IO
-open Fake.IO.Globbing.Operators
 open Fake.DotNet
 open Fake.Core
 
@@ -17,9 +15,8 @@ Target.create "Clean" (fun _ ->
 )
 
 Target.create "BuildApp" (fun _ ->
-    !! "src/app/**/*.fsproj"
-    |> MSBuild.runRelease id buildDir "Build"
-    |> Trace.logItems "AppBuild-Output: ")
+    DotNet.build id  "FSharp.LazyList.sln"
+)
 
 Target.create "Test" (fun _ ->
     DotNet.test id "FSharp.LazyList.sln"
