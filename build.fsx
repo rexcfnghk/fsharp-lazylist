@@ -15,7 +15,7 @@ Target.create "Clean" (fun _ ->
 )
 
 Target.create "BuildApp" (fun _ ->
-    DotNet.build id  "FSharp.LazyList.sln"
+    DotNet.build id "FSharp.LazyList.sln"
 )
 
 Target.create "Test" (fun _ ->
